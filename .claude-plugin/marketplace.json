@@ -1,0 +1,15 @@
+{
+  "name": "sloyd-dnd-mini-forge",
+  "owner": {
+    "name": "Sloyd",
+    "url": "https://www.sloyd.ai"
+  },
+  "description": "Sloyd skill teams for Claude Code.",
+  "plugins": [
+    {
+      "name": "dnd-mini-forge",
+      "source": "./teams/dnd-mini-forge",
+      "description": "Describe your D&D character, get a printable miniature. Bestiary minis, scatter terrain, skyboxes and battle maps."
+    }
+  ]
+}

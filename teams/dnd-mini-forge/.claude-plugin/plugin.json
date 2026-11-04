@@ -1,0 +1,13 @@
+{
+  "name": "dnd-mini-forge",
+  "version": "0.1.0",
+  "description": "Describe your D&D character, get a printable 28mm/32mm miniature. Plus bestiary minis, modular scatter terrain, VTT skyboxes and battle maps. Powered by the Sloyd API.",
+  "author": {
+    "name": "Sloyd",
+    "url": "https://www.sloyd.ai"
+  },
+  "homepage": "https://github.com/Sloydai/D-D-mini-forge",
+  "repository": "https://github.com/Sloydai/D-D-mini-forge",
+  "privacyPolicyUrl": "https://www.sloyd.ai/privacy-policy",
+  "keywords": ["dnd", "tabletop", "miniatures", "3d-printing", "stl", "battle-map", "vtt", "sloyd"]
+}

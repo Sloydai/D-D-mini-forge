@@ -1,0 +1,225 @@
+[
+  {
+    "id": "brakka_concept",
+    "tool": "generate_image",
+    "args": {
+      "prompt": "Full-body tabletop miniature concept of Brakka Ironveil, a grizzled female hill dwarf forge cleric: braided iron-grey hair and beard-braids with brass rings, soot-stained heavy plate over a leather apron, a glowing ember rune on her breastplate. Defiant planted stance, feet apart. A huge forge warhammer resting on her right shoulder, a tall riveted tower shield on her left arm touching the ground. Palette: soot black, brass, ember orange. Level 5 gear: well-made, battle-worn, one glowing rune. Heroic 28mm miniature proportions: slightly large head, large hands, chunky weapon, thick limbs. Front view, facing the camera, entire figure visible from head to boots, centered, plain light grey studio background, soft even lighting, no ground, no base, no shadow, no text.",
+      "aspectRatio": "1:1",
+      "genStyleId": "HandpaintedStylized"
+    }
+  },
+  {
+    "id": "brakka_left",
+    "tool": "edit_image",
+    "args": {
+      "jobId": "{{brakka_concept.jobId}}",
+      "prompt": "Same character, same outfit, colors and gear, rotated 90 degrees: left side profile view. The character's left side faces the camera and they look toward the left edge of the image. Full body head to boots, orthographic, same plain light grey background and lighting, no ground, no shadow."
+    }
+  },
+  {
+    "id": "brakka_back",
+    "tool": "edit_image",
+    "args": {
+      "jobId": "{{brakka_concept.jobId}}",
+      "prompt": "Same character, same outfit, colors and gear, seen from directly behind: back view, full body head to boots, orthographic, same plain light grey background and lighting, no ground, no shadow."
+    }
+  },
+  {
+    "id": "brakka_3d",
+    "tool": "generate_3d_from_images",
+    "args": {
+      "frontImage": {
+        "url": "{{brakka_concept.imageUrl}}"
+      },
+      "leftImage": {
+        "url": "{{brakka_left.imageUrl}}"
+      },
+      "backImage": {
+        "url": "{{brakka_back.imageUrl}}"
+      },
+      "EnablePBR": "true",
+      "FaceCount": "300000"
+    }
+  },
+  {
+    "id": "sel_concept",
+    "tool": "generate_image",
+    "args": {
+      "prompt": "Full-body tabletop miniature concept of Sel Varanthe, a tiefling fiend warlock: plum skin, thick curled ram horns, long tailored coat falling to the ground behind her feet, thick tail curled around her ankle. Confident upright stance. Her right hand held close at chest height wrapped in solid stylized hellfire attached to the hand, her left hand clutching a thick grimoire to her hip. Palette: deep plum, black, ember orange and gold trim. Heroic 28mm miniature proportions: slightly large head, large hands, chunky weapon, thick limbs. Front view, facing the camera, entire figure visible from head to boots, centered, plain light grey studio background, soft even lighting, no ground, no base, no shadow, no text.",
+      "aspectRatio": "1:1",
+      "genStyleId": "HandpaintedStylized"
+    }
+  },
+  {
+    "id": "sel_left",
+    "tool": "edit_image",
+    "args": {
+      "jobId": "{{sel_concept.jobId}}",
+      "prompt": "Same character, same outfit, colors and gear, rotated 90 degrees: left side profile view. The character's left side faces the camera and they look toward the left edge of the image. Full body head to boots, orthographic, same plain light grey background and lighting, no ground, no shadow."
+    }
+  },
+  {
+    "id": "sel_back",
+    "tool": "edit_image",
+    "args": {
+      "jobId": "{{sel_concept.jobId}}",
+      "prompt": "Same character, same outfit, colors and gear, seen from directly behind: back view, full body head to boots, orthographic, same plain light grey background and lighting, no ground, no shadow."
+    }
+  },
+  {
+    "id": "sel_3d",
+    "tool": "generate_3d_from_images",
+    "args": {
+      "frontImage": {
+        "url": "{{sel_concept.imageUrl}}"
+      },
+      "leftImage": {
+        "url": "{{sel_left.imageUrl}}"
+      },
+      "backImage": {
+        "url": "{{sel_back.imageUrl}}"
+      },
+      "EnablePBR": "true",
+      "FaceCount": "300000"
+    }
+  },
+  {
+    "id": "pip_concept",
+    "tool": "generate_image",
+    "args": {
+      "prompt": "Full-body tabletop miniature concept of Pip Thistlefoot, a halfling rogue: big mischievous grin, oversized hood pushed back, hooded cloak falling to the ground behind him, bare hairy feet planted wide. Crouched slightly forward, two thick daggers held in reverse grip close against his forearms, belt of pouches. Extra heroic proportions for a small race: big head, big hands. Palette: forest green, worn leather brown, brass buttons. Heroic 28mm miniature proportions: slightly large head, large hands, chunky weapon, thick limbs. Front view, facing the camera, entire figure visible from head to boots, centered, plain light grey studio background, soft even lighting, no ground, no base, no shadow, no text.",
+      "aspectRatio": "1:1",
+      "genStyleId": "HandpaintedStylized"
+    }
+  },
+  {
+    "id": "pip_left",
+    "tool": "edit_image",
+    "args": {
+      "jobId": "{{pip_concept.jobId}}",
+      "prompt": "Same character, same outfit, colors and gear, rotated 90 degrees: left side profile view. The character's left side faces the camera and they look toward the left edge of the image. Full body head to boots, orthographic, same plain light grey background and lighting, no ground, no shadow."
+    }
+  },
+  {
+    "id": "pip_back",
+    "tool": "edit_image",
+    "args": {
+      "jobId": "{{pip_concept.jobId}}",
+      "prompt": "Same character, same outfit, colors and gear, seen from directly behind: back view, full body head to boots, orthographic, same plain light grey background and lighting, no ground, no shadow."
+    }
+  },
+  {
+    "id": "pip_3d",
+    "tool": "generate_3d_from_images",
+    "args": {
+      "frontImage": {
+        "url": "{{pip_concept.imageUrl}}"
+      },
+      "leftImage": {
+        "url": "{{pip_left.imageUrl}}"
+      },
+      "backImage": {
+        "url": "{{pip_back.imageUrl}}"
+      },
+      "EnablePBR": "true",
+      "FaceCount": "300000"
+    }
+  },
+  {
+    "id": "kaelen_concept",
+    "tool": "generate_image",
+    "args": {
+      "prompt": "Full-body tabletop miniature concept of Kaelen Duskbough, a wood elf ranger: long braided hair, calm watchful face, leaf-pattern mossy cloak falling to the ground. Relaxed planted stance. A thick unstrung longbow held vertically in her left hand, its lower tip resting on the ground, a quiver of arrows on her back, a thick hunting knife on her belt. Palette: moss green, bark brown, grey. Heroic 28mm miniature proportions: slightly large head, large hands, chunky weapon, thick limbs. Front view, facing the camera, entire figure visible from head to boots, centered, plain light grey studio background, soft even lighting, no ground, no base, no shadow, no text.",
+      "aspectRatio": "1:1",
+      "genStyleId": "HandpaintedStylized"
+    }
+  },
+  {
+    "id": "kaelen_left",
+    "tool": "edit_image",
+    "args": {
+      "jobId": "{{kaelen_concept.jobId}}",
+      "prompt": "Same character, same outfit, colors and gear, rotated 90 degrees: left side profile view. The character's left side faces the camera and they look toward the left edge of the image. Full body head to boots, orthographic, same plain light grey background and lighting, no ground, no shadow."
+    }
+  },
+  {
+    "id": "kaelen_back",
+    "tool": "edit_image",
+    "args": {
+      "jobId": "{{kaelen_concept.jobId}}",
+      "prompt": "Same character, same outfit, colors and gear, seen from directly behind: back view, full body head to boots, orthographic, same plain light grey background and lighting, no ground, no shadow."
+    }
+  },
+  {
+    "id": "kaelen_3d",
+    "tool": "generate_3d_from_images",
+    "args": {
+      "frontImage": {
+        "url": "{{kaelen_concept.imageUrl}}"
+      },
+      "leftImage": {
+        "url": "{{kaelen_left.imageUrl}}"
+      },
+      "backImage": {
+        "url": "{{kaelen_back.imageUrl}}"
+      },
+      "EnablePBR": "true",
+      "FaceCount": "300000"
+    }
+  },
+  {
+    "id": "owlbear_concept",
+    "tool": "generate_image",
+    "args": {
+      "aspectRatio": "1:1",
+      "genStyleId": "HandpaintedStylized",
+      "prompt": "Full-body tabletop miniature of an owlbear: a massive bear body with an owl's head and hooked beak, thick shaggy brown feathers fading into fur, moss and a broken arrow stuck in its shoulder. Rearing up on its hind legs to roar, forelimbs raised close to the chest with thick chunky claws, weight on both hind feet, short tail. Heroic miniature proportions, readable silhouette at arm's length. Palette: umber brown, cream feathers, moss green. Three-quarter front view, entire creature visible, centered, plain light grey studio background, even lighting, no ground, no base, no shadow, no text."
+    }
+  },
+  {
+    "id": "owlbear_3d",
+    "tool": "generate_3d_from_image",
+    "args": {
+      "file": {
+        "url": "{{owlbear_concept.imageUrl}}"
+      },
+      "targetFaceCount": 300000,
+      "textureResolution": "2k"
+    }
+  },
+  {
+    "id": "wall_3d",
+    "tool": "generate_3d_from_text",
+    "args": {
+      "genStyleId": "HandpaintedStylized",
+      "prompt": "Tabletop wargame terrain piece: a ruined temple wall corner, weathered green-veined marble blocks with worn bronze trim, a broken archway, moss and roots, chunky solid rubble attached at the base, thick walls, blocky broken edges, sits flat on the ground, no floating debris."
+    }
+  },
+  {
+    "id": "wall_split",
+    "tool": "split_model_into_parts",
+    "args": {
+      "jobId": "{{wall_3d.jobId}}",
+      "method": "partition",
+      "numberOfParts": 6,
+      "attachmentPoints": true
+    }
+  },
+  {
+    "id": "map",
+    "tool": "generate_image",
+    "args": {
+      "aspectRatio": "16:9",
+      "genStyleId": "HandpaintedStylized",
+      "prompt": "Top-down orthographic battle map for a tabletop RPG, viewed straight down, no perspective. A ruined forest temple courtyard: cracked green-veined marble flagstones, a collapsed wall along the north edge, four broken pillars giving cover in the middle, a shallow mossy pool in the south-east corner as difficult terrain, an owlbear nest of branches and bones in the north-west, a narrow overgrown entrance path from the south. Late afternoon light through the canopy. Clear readable floor, features sized for 5-foot squares. No grid lines, no characters, no tokens, no text, no UI, no frame."
+    }
+  },
+  {
+    "id": "skybox",
+    "tool": "generate_skybox",
+    "args": {
+      "genStyleId": "HandpaintedStylized",
+      "prompt": "360-degree panorama from eye level inside a dwarven forge-tavern carved into a mountain: a roaring forge hearth, brass pipes, long oak tables with tankards, weapon racks, glowing ember runes on stone pillars, a balcony overlooking a lava channel far below. Warm firelight, cozy and loud. Rich detail all around."
+    }
+  }
+]
