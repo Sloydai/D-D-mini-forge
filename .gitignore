@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+mini-forge/
+# demo run: raw Sloyd downloads and full-res STLs stay local; curated media gets committed
+teams/dnd-mini-forge/examples/demo-party/out/jobs/
+teams/dnd-mini-forge/examples/demo-party/out/stl/
